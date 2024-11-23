@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZooPark Zological Park</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header-adminPanel">
+      <nav>
+        <div class="logo"><a href="index.html">ZooParc</a></div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="animals.html">ANIMALS</a></li>
+            <li><a href="memberRegistration.html">MEMBER REGISTRATION</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="food.html">FOOD OUTLETS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="education.html">EDUCATION</a></li>
+            <li><a href="adminPanelForm.html">ADMIN</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Admin Panel</h1>
+    </section>
+
+    <body>
+      <div>      
+          <header>
+              <nav>
+                  <div class="logoName">
+                      <h3 class="dash-text">ZOOPARC ZOOLOGICAL PARK DASHBOARD </h3>
+                  </div>
+              
+              </nav>
+          </header>
+          <section>
+              <table>
+                  <tr>
+                      <th>ID</th>
+                      <th>Event_Name</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Price</th>
+                      <th>Description</th>
+                      <th>Delete</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Penguin Parade</td>
+                      <td>23/08/2024</td>
+                      <td>09:00AM</td>
+                      <td>$25</td>
+                      <td>Watch the elegant penguins march together! </td>
+                      <td><a href="">Delete</a></td>
+                      
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Evening Safari</td>
+                      <td>23/08/2024</td>
+                      <td>09:00AM</td>
+                      <td>$50</td>
+                      <td> Join us for an evening safari and see nocturnal animals in their natural habitats. A unique experience under the stars.</td>
+                      <td><a href="">Delete</a></td>
+                  
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Panda Playtime</td>
+                      <td>23/08/2024</td>
+                      <td>09:00AM</td>
+                      <td>$30</td>
+                      <td>Join the pandas in a fun and interactive session. </td>
+                      <td><a href="">Delete</a></td>
+                  </tr>
+              </table>
+          </section>
+          <section class="update-delete">
+              <ul>
+                  <li>
+                      <div class="add-Event">
+                          <div>
+                              <h2>ADD A EVENT</h2>
+                          </div>
+                          <form action="" class="adminPanel-form">
+                              <label for="EventName">Event Name :</label>
+                              <br>
+                              <input type="text" name="EventName" id="EventName" placeholder="Event Name">
+                              <br>
+                              <label for="date">Date :</label>
+                              <br>
+                              <input type="date" name="date" id="date" placeholder="Enter a date">
+                              <br>
+                              <label for="time">Time :</label>
+                              <br>
+                              <input type="time" name="time" id="time" placeholder="Enter a time">
+                              <br>
+                              <label for="description">Description :</label>
+                              <br>
+                              <textarea name="description" id="description" cols="30" rows="3" placeholder="Description"></textarea>
+                              <br><br>
+                              <button type="submit" class="hero-btn blue-btn">Add Events</button>
+                              <br><br>
+                              
+                              <button type="reset" class="hero-btn blue-btn">Reset</button>
+                          </form>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="update-Event">
+                          <div>
+                              <h2>UPDATE A EVENT</h2>
+                          </div>
+                          <form action="" class="adminPanel-form">
+                              <label for="id">ID :</label>
+                              <br>
+                              <input type="text" name="id" id="id" placeholder="ID">
+                              <br>
+                              <label for="EventName">Event Name :</label>
+                              <br>
+                              <input type="text" name="EventName" id="EventName" placeholder="Event Name">
+                              <br>
+                              <label for="date">Date :</label>
+                              <br>
+                              <input type="date" name="date" id="date" placeholder="Enter a date">
+                              <br>
+                              <label for="time">Time :</label>
+                              <br>
+                              <input type="time" name="time" id="time" placeholder="Enter a time">
+                              <br>
+                              <label for="description">Description :</label>
+                              <br>
+                              <input type="text" name="description" id="description" placeholder="Description">
+                              <br><br>
+                              <button type="submit" class="hero-btn blue-btn">Submit Event</button>
+                              <br><br>
+                              <button type="reset" class="hero-btn blue-btn">Reset Events</button>
+                          </form>
+                      </div>
+                  </li>
+              </ul>
+          </section>
+      </div>
+  
+   
+  </body>
+  </html>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a href="memberRegistration.html">Member Registration</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="food.html">Food Outlets</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="adminPanelForm.html">Admin</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 ZooParc Lane, Wildlife
+            City, Country
+          </p>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+          <p><i class="fas fa-envelope"></i> info@zooparc.com</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ZooParc Zoological Park. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/volunteer.js"></script>
+  </body>
+</html>
